@@ -1,0 +1,239 @@
+﻿@page
+@using LEGOINNOVATIVE.Model
+@model IndexModel
+@{
+    ViewData["Title"] = "";
+}
+
+<div>
+    <a asp-page="/Sites/Innovative"><img id="banner" src="~/media/Background-Innovative/BannerHomePage.png"></a>
+</div>
+
+<div class="navPicturesReplica">
+    <ul class="replicaList">
+        <li class="replicaListContent">
+            <img src="~/media/pictures/newsLegoReplica.webp"/><br />
+            New
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/exclusiveLegoReplica.webp" /><br />
+            Exclusives
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/offersLegoReplica.webp" /><br />
+            Offers
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/christmasLegoReplica.webp" /><br />
+            Holiday 2022
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures//giftCardLegoReplica.webp" /><br />
+            Gift Cards
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/giftFinderLegoReplica.webp" /><br />
+            Gift Finder
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/limitedLegoReplica.webp" /><br />
+            Hard to find
+        </li>
+        <li class="replicaListContent">
+            <img src="~/media/pictures/vipLegoReplica.webp" /><br />
+            VIP
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h3 class="replicaH3">Recomended For You</h3>
+</div>
+
+<div class="recommendedForYou">
+    <ul class="recomendedList">
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/atAtReplicaItem.webp"/>
+                </div>
+                <p class="replicaItemTitle">AT-AT&trade;</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg"/>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/halfStarReplica.svg"/>
+                <p class="replicaPrice">$849.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/hogwartsReplicaItem.webp"/>
+                </div>
+                <p class="replicaItemTitle">Hogwarts Express&trade; - Collectors' Edition</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg"/>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/noStarReplica.svg"/>
+                <p class="replicaPrice">$499.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/falconReplicaItem.webp"/>
+                </div>
+                <p class="replicaItemTitle">Milennium Falcon&trade;</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg"/>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg"/>
+                <p class="replicaPrice">$849.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/razorCrestReplicaItem.webp"/>
+                </div>
+                <p class="replicaItemTitle">The Razor Crest&trade;</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg"/>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/halfStarReplica.svg"/>
+                <p class="replicaPrice">$599.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="replicaBanner">
+    <p class="replicaBannerText">LEGO Gift Cards - The gift that lets them choose</p><br />
+    <p class="replicaBannerButton">Learn more ></p>
+    <img class="replicaBannerImg" src="~/media/pictures/replicaBanner.webp" />
+</div>
+
+<div>
+    <h3 class="replicaH3">This week's top picks</h3>
+</div>
+<div class="recommendedForYou">
+    <ul class="recomendedList">
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolderNoBorder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaEiffel.webp" />
+                </div>
+                <p class="replicaItemTitleMid">New LEGO Eiffel tower</p>
+                <p class="replicaItemDesc">Build a model og one of the world's best-loved<br />landmarks.</p>
+                <p class="replicaItemShopNow">Shop now ></p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolderNoBorder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaChristmasTree.webp" />
+                </div>
+                <p class="replicaItemTitleMid">New LEGO Christmas Tree</p>
+                <p class="replicaItemDesc">Build and display your choice - 1 big tree or 2<br />smaller trees.</p>
+                <p class="replicaItemShopNow">Shop now ></p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolderNoBorder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaBackToTheF.webp" />
+                </div>
+                <p class="replicaItemTitleMid">LEGO Back to the Future Time<br />Machine</p>
+                <p class="replicaItemDesc">Relive a timeless movie classic with this<br />detailed LEGO set.</p>
+                <p class="replicaItemShopNow">Shop now ></p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolderNoBorder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaLoopCoaster.webp" />
+                </div>
+                <p class="replicaItemTitleMid">LEGO Loop Coaster</p>
+                <p class="replicaItemDesc">Expand your Fairground Collection with a real<br />thrill ride.</p>
+                <p class="replicaItemShopNow">Shop now ></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h3 class="replicaH3">Featured Sets</h3>
+</div>
+
+<div class="recommendedForYou">
+    <ul class="recomendedList">
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaTheGlobe.webp" />
+                </div>
+                <p class="replicaItemTitle">The Globe</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/halfStarReplica.svg" />
+                <p class="replicaPrice">$229.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaTypeWriter.webp"/>
+                </div>
+                <p class="replicaItemTitle">Typewriter</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/noStarReplica.svg" />
+                <p class="replicaPrice">$249.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicabackToTheFSet.webp" />
+                </div>
+                <p class="replicaItemTitle">Back to the Future Time Machine</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/halfStarReplica.svg" />
+                <p class="replicaPrice">$199.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+        <li class="replicaListImageContent">
+            <div class="recomendedElement">
+                <div class="replicaItemImageHolder">
+                    <img class="replicaItemImage" src="~/media/pictures/replicaChervolet.webp" />
+                </div>
+                <p class="replicaItemTitle">Chervolet Camaro Z28</p>
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/starsReplica.svg" />
+                <img class="replicaStars" src="~/media/pictures/halfStarReplica.svg" />
+                <p class="replicaPrice">$160.99</p>
+                <p class="replicaAddButton">Add to Bag</p>
+            </div>
+        </li>
+    </ul>
+</div>

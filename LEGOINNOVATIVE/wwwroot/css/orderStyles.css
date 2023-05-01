@@ -1,0 +1,235 @@
+﻿@font-face {
+    font-family: Kollektif;
+    src: url("../fonts/Kollektif-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/Kollektif-BoldItalic.ttf") format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+    src: url("../fonts/Kollektif-Italic.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Kollektif.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: shrikhand;
+    src: url("../fonts/Shrikhand.ttf") format('truetype')
+}
+
+@font-face {
+    font-family: SFPro;
+    src: url("../fonts/SFPRODISPLAYBOLD.OTF") format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/SFPRODISPLAYHEAVYITALIC.OTF") format('opentype');
+    font-weight: 900;
+    font-style: oblique;
+    src: url("../fonts/SFPRODISPLAYREGULAR.OTF") format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*--- Make Order Site ---*/
+body.makeOrderBody {
+    background-color: #FFE8C8;
+}
+
+h1.makeOrderHeader {
+    font-family: shrikhand;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+div.makeOrderDiv {
+    margin-left: 400px;
+    width: 500px;
+}
+
+p.makeOrderText {
+    font-family: SFPro;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+input.makeOrderTextDescription {
+    border-radius: 20px;
+    padding: 10px 170px 50px 0px;
+    font-family: SFPro;
+    font-size: 18px;
+    border-style: none;
+}
+
+input.makeOrderInput {
+    border-radius: 20px;
+    padding: 10px 170px 10px 0px;
+    font-family: SFPro;
+    font-size: 18px;
+    border-style: none;
+}
+
+input.makeOrderCheckbox {
+    border-radius: 30px;
+    width: 25px;
+    border-style: none;
+    height: 25px;
+}
+
+p.checkboxText {
+    display: inline;
+    font-family: SFPro;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+select.makeOrderDropdown {
+    height: 25px;
+}
+
+input.makeOrderButton {
+    background-color: #A2D240;
+    margin-top: 40px;
+    padding: 15px 45px;
+    border-radius: 20px;
+    font-family: SFPro;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-style: none;
+}
+
+/*--- Order Request Site ---*/
+
+body.orderRequestBody {
+    background-color: #FFE8C8;
+}
+
+h1.orderRequestHeader {
+    font-family: shrikhand;
+    font-size: 60px;
+    margin-left: 420px;
+    margin-top: 85px;
+}
+
+p.orderRequestP {
+    font-family: SFPro;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.orderRequestInfoContainer {
+    font-family: SFPro;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: white;
+}
+
+div.displayFlex {
+    display: flex;
+}
+
+div.orderRequestInfoDiv {
+    margin-left: 420px;
+    width: 600px;
+    float: left;
+    height: 200px;
+}
+
+div.orderRequestProfileInfoDiv {
+    margin-left: 50px;
+    display: inline;
+    float: right;
+}
+
+ul.orderRequestProfileInfoList {
+    font-family: SFPro;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: white;
+    width: 350px;
+}
+
+div.buttonDiv {
+    display: flex;
+    width: 600px;
+    margin-left: 420px;
+}
+
+div.buttonContainer {
+    display: inline;
+    margin-right: 25px;
+}
+
+input.cancelButton {
+    background-color: #E30911;
+    margin-top: 40px;
+    padding: 15px 45px;
+    border-radius: 20px;
+    font-family: SFPro;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-style: none;
+}
+
+a.editOrderButton {
+    background-color: #FFA402;
+    margin-top: 40px;
+    padding: 18px 55px;
+    border-radius: 20px;
+    font-family: SFPro;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*--- Edit Order Site ---*/
+div.orderEditContainer {
+    margin-left: 420px;
+}
+
+a.arrowButtonBack {
+    border-radius: 30px;
+    padding: 2px 25px;
+    background-color: black;
+    color: #FFE8C8;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+a.buttomLink {
+    color: #FFE8C8;
+}
+
+div.arrowDiv {
+    margin-top: 30px;
+}
+
+div#marginDivId {
+    margin-bottom: 200px;
+}
+
+input.removeButton {
+    border-radius: 20px;
+    border-style: none;
+    background-color: black;
+    color: #FFE8C8;
+    font-family: SFPro;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1px 15px;
+}

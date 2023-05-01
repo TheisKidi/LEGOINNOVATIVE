@@ -1,0 +1,45 @@
+﻿@page
+@model LEGOINNOVATIVE.Pages.Orders.OrderRequestsModel
+@{
+}
+
+<body class="orderRequestBody">
+    <div class="arrowDiv">
+        <a class="arrowButtonBack" asp-page="/Sites/MasterProfile">&#60;</a>
+    </div>
+    <div>
+        <h1 class="orderRequestHeader">#@Model.Id. @Model.Title</h1>
+    </div>
+    <div>
+        <div class="displayFlex">
+            <div class="orderRequestInfoDiv">
+                <p class="orderRequestP">Description</p>
+                <p class="orderRequestInfoContainer">@Model.Description</p>
+            </div>
+            <div class="orderRequestProfileInfoDiv">
+                <p class="orderRequestP">Info</p>
+                <ul class="orderRequestProfileInfoList">
+                    <li>Name: @Model.Name </li>
+                    <li>Email: @Model.Email</li>
+                    <li>Phone: @Model.Phone</li>
+                    <li>Plan: @Model.PlanType</li>
+                    <li>Bricks: Max @Model.Bricks</li>
+                    <li>Accepted: @Model.Accepted</li>
+                </ul>
+            </div>
+        </div>
+        <div class="buttonDiv">
+            <form method="post">
+                <div class="buttonContainer">
+                    <input type="submit" value="Accept" asp-page-handler="Accept" asp-route-id="@Model.Id" class="makeOrderButton" />
+                </div>
+                <div class="buttonContainer">
+                    <a class="editOrderButton" asp-page="/Orders/OrderEdit" asp-route-id="@Model.Id">Edit</a>
+                </div>
+                <div class="buttonContainer">
+                    <input type="submit" value="Decline" asp-page-handler="Decline" class="cancelButton" asp-route-id="@Model.Id"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

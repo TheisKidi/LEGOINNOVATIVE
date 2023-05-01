@@ -1,0 +1,33 @@
+﻿@page
+@model LEGOINNOVATIVE.Pages.Orders.OrderActiveModel
+@{
+}
+<body class="orderRequestBody">
+    <div>
+        <h1 class="orderRequestHeader">#@Model.Id. @Model.Title</h1>
+    </div>
+    <div class="displayFlex">
+        <div class="orderRequestInfoDiv">
+            <p class="orderRequestP">Description</p>
+            <p class="orderRequestInfoContainer">@Model.Description</p>
+        </div>
+        <div class="orderRequestProfileInfoDiv">
+            <p class="orderRequestP">Info</p>
+            <ul class="orderRequestProfileInfoList">
+                <li>Name: @Model.Name </li>
+                <li>Email: @Model.Email</li>
+                <li>Phone: @Model.Phone</li>
+                <li>Plan: @Model.PlanType</li>
+                <li>Bricks: Max @Model.Bricks</li>
+                <li>Accepted: @Model.Accepted</li>
+            </ul>
+        </div>
+    </div>
+    <div class="buttonDiv">
+        <form method="post">
+            <div class="buttonContainer">
+                <input type="submit" value="Complete" asp-page-handler="Complete" asp-route-id="@Model.Id" class="makeOrderButton" />
+            </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,231 @@
+﻿@font-face {
+    font-family: Kollektif;
+    src: url("../fonts/Kollektif-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/Kollektif-BoldItalic.ttf") format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+    src: url("../fonts/Kollektif-Italic.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Kollektif.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: shrikhand;
+    src: url("../fonts/Shrikhand.ttf") format('truetype')
+}
+
+@font-face {
+    font-family: SFPro;
+    src: url("../fonts/SFPRODISPLAYBOLD.OTF") format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/SFPRODISPLAYHEAVYITALIC.OTF") format('opentype');
+    font-weight: 900;
+    font-style: oblique;
+    src: url("../fonts/SFPRODISPLAYREGULAR.OTF") format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+
+}
+
+div.InnovativeInfoBackground1 {
+    background-image: url("../media/Background-Innovative/sectionHome.svg");
+    background-size: cover;
+    height: 1080px;
+}
+
+div.InnovativeBot{
+    background-color: #ffa402;
+    height: 1080px;
+}
+
+p.InnovativeInfoHeader{
+    font-family: shrikhand;
+    font-size: 130px;
+    position: absolute;
+    left: 340px;
+    top: 360px;
+    color: #fdd9b4;
+}
+
+p.InnovativeInfoSlogan {
+    color: #fdd9b4;
+    font-family: Kollektif;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    left: 1330px;
+    top: 500px;
+}
+
+div.InnovativeInfoBackground2 {
+    background-image: url("../media/Background-Innovative/section1.svg");
+    background-size: cover;
+    height: 1080px;
+
+}
+
+p.Section1Header{
+    position:absolute;
+    left: 200px;
+    top: 1400px;
+    font-size: 130px;
+    color: #fdd9b4;
+    font-family: shrikhand;
+}
+
+p.Section1Description {
+    position: absolute;
+    left: 200px;
+    top: 1550px;
+    font-size: 30px;
+    color: #fdd9b4;
+    font-family: Kollektif;
+}
+
+img.Section1Pic{
+    position: absolute;
+    left: 1000px;
+    top: 1400px;
+    height: 650px;
+}
+
+div.InnovativeInfoBackground3 {
+    background-image: url("../media/Background-Innovative/section2.svg");
+    background-size: cover;
+    height: 1080px;
+}
+
+p.Section2Header {
+    position: absolute;
+    left: 600px;
+    top: 2300px;
+    font-size: 130px;
+    color: #fdd9b4;
+    font-family: shrikhand;
+}
+
+p.Section2Description {
+    position: absolute;
+    left: 600px;
+    top: 2450px;
+    font-size: 30px;
+    color: #fdd9b4;
+    font-family: Kollektif;
+}
+
+img.Section2Pic {
+    position: absolute;
+    left: 200px;
+    top: 2350px;
+    height: 300px;
+}
+
+
+div.InnovativeInfoBackground4 {
+    background-image: url("../media/Background-Innovative/section3.svg");
+    background-size: cover;
+    height: 1080px;
+}
+
+p.Section3Header {
+    position: absolute;
+    left: 200px;
+    font-size: 130px;
+    color: #fdd9b4;
+    font-family: shrikhand;
+}
+
+p.Section3Description {
+    position: absolute;
+    left: 200px;
+    top: 3530px;
+    font-size: 30px;
+    color: #fdd9b4;
+    font-family: Kollektif;
+}
+
+img.Section3Pic {
+    position: absolute;
+    left: 1120px;
+    top: 3400px;
+    height: 400px;
+}
+
+div.InnovativeInfoBackground5 {
+    background-image: url("../media/Background-Innovative/section4.svg");
+    background-size: cover;
+    height: 1080px;
+}
+
+p.Section4Header {
+    font-size: 130px;
+    position: absolute;
+    left: 1100px;
+    top: 4700px;
+    color: #fdd9b4;
+    font-family: shrikhand;
+}
+
+p.Section4Description {
+    position: absolute;
+    left: 1100px;
+    top: 4850px;
+    font-size: 30px;
+    color: #fdd9b4;
+    font-family: Kollektif;
+}
+
+img.Section4Pic {
+    position: absolute;
+    left: 200px;
+    top: 4650px;
+    height: 600px;
+}
+
+
+div.InnovativeInfoBackground6 {
+    background-color: #ffa402;
+    background-size: cover;
+    height: 1080px;
+}
+
+p.Section5Header {
+    position: absolute;
+    left: 350px;
+    top: 5600px;
+    font-size: 130px;
+    color: #fdd9b4;
+    font-family: shrikhand;
+}
+
+div.PlanDiv{
+    position: absolute;
+    top: 5850px;
+    left: 30px;
+    display: flex;
+    height: 500px;
+
+}
+
+a.PlansLink{
+    position: absolute;
+    top: 6430px;
+    left: 765px;
+    font-size: 30px;
+    padding: 30px 80px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: Kollektif;
+    color: #fdd9b4;
+}

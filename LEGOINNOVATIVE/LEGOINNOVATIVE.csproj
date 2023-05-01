@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\media\symbols\cartSymbol.svg" />
+    <None Include="wwwroot\media\symbols\crownLogo.svg" />
+    <None Include="wwwroot\media\symbols\heartSymbol.svg" />
+    <None Include="wwwroot\media\symbols\legoLogo.svg" />
+    <None Include="wwwroot\media\symbols\legoManSymbol.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+</Project>

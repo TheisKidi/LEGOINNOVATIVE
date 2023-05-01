@@ -1,0 +1,49 @@
+﻿@page
+@model LEGOINNOVATIVE.Pages.Orders.OrderEditModel
+@{
+}
+<body class="makeOrderBody">
+    <div class="orderEditContainer">
+        <div>
+            <form method="post">
+                <div class="form-group">
+                    <input type="hidden" asp-for="@Model.Id" class="makeOrderInput" /><br />
+                </div>
+
+                <div class="form-group">
+                    <p class="makeOrderText">Title</p><br />
+                    <input asp-for="@Model.Title" class="makeOrderInput" /><br />
+                </div>
+
+                <div class="form-group">
+                    <p class="makeOrderText">Description</p><br />
+                    <input asp-for="@Model.Description" class="makeOrderInput" /><br />
+                </div>
+
+                <div class="form-group">
+                    <p class="makeOrderText">Publish</p><br />
+                    <input type="checkbox" asp-for="@Model.Publish" class="makeOrderCheckbox" /><p class="checkboxText">Yes</p>
+                    <br />
+                </div>
+
+                <div class="form-group">
+                    <p class="makeOrderText">Plan</p><br />
+                    <select class="makeOrderDropdown" asp-for="@Model.ChosenPlan">
+                        @foreach (var p in Model.Plans)
+                        {
+                            <option value="@p">@p</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <div class="buttonContainer">
+                        <input type="submit" value="Edit" asp-page-handler="Edit" asp-route-id="@Model.Id" class="makeOrderButton" />
+                    </div>
+                    <div class="buttonContainer">
+                        <input type="submit" value="Cancel" asp-page-handler="Cancel" class="cancelButton" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

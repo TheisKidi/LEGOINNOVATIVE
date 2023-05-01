@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LEGOINNOVATIVE</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LEGOINNOVATIVE.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/InnovativeInfo.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/orderStyles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="EkstraNav">
+            <div class="EkstraNavContainer">
+                <div class="Playzone">
+                    <p>&#8592;PLAYZONE</p>
+                </div>
+                <div class="TakeMeThere">
+                    <p>&lt;</p>
+                    <p>New LEGO INNOVATIVE<a>Take me there!</a></p>
+                    <p>&#62;</p>
+                </div>
+                <div class="AccountDiv">
+                    <img class="EkstraNavImg" src="~/media/symbols/legoManSymbol.svg"/>
+                    <a asp-page="/Login/Index">Login</a>
+                    <p>&VerticalLine;</p>
+                    <img class="EkstraNavImg" src="~/media/symbols/crownLogo.svg"/>
+                    <a asp-area="" asp-page="/Sites/CustomerProfile">Account</a>
+                </div>
+            </div>
+        </div>
+        <nav id="nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/media/symbols/legoLogo.svg" width="55px" : height="55px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a id="navIndex" class="nav-link text-dark" asp-area="" asp-page="/Index">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navIndex" class="nav-link text-dark" asp-area="" asp-page="/Sites/Overview">MORE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navIndex" class="nav-link text-dark" asp-area="" asp-page="/Login/Index">HELP</a>
+                        </li>
+                        @if (LEGOINNOVATIVE.Services.LoginService.isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a id="navIndex" class="nav-link text-dark" asp-area="" asp-page="/Sites/MasterProfile">ADMIN</a>
+                            </li>
+                        }
+                        <li id="search" class="nav-item">
+                            <img src="~/media/symbols/searchSymbol.svg"/>
+                        </li>                        
+                        <li id="heart" class="nav-item">
+                            <img src="~/media/symbols/heartSymbol.svg"/>
+                        </li>
+                        <li id="cart" class="nav-item">
+                            <img src="~/media/symbols/cartSymbol.svg"/>
+                        </li>
+                        <li id="cartNum" class="nav-item">
+                            <p>(0)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body Section -->
+    <div>
+        <main role="main" class="pb-3" id="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footerDarkBlue">
+        <div class="footerDiv">
+            <div class="footerColumn">
+                <ul class="footerList">
+                    <li><a asp-page="/Index"><img class="legoLogoFooter" src="~/media/symbols/legoLogo.svg"/></a></li>
+                    <li class="footerText">Denmark</li>
+                    <li class="footerText">Giftcard</li>
+                    <li class="footerText">LEGO catalogs</li>
+                    <li class="footerText">Find a LEGO Store</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <ul class="footerList">
+                    <li class="footerHeader">ABOUT US</li>
+                    <li class="footerText">About LEGO</li>
+                    <li class="footerText">LEGO news</li>
+                    <li class="footerText">Sustainability</li>
+                    <li class="footerText">Supply Chain Transparency<br />Statement</li>
+                    <li class="footerText">LEGO Product Certification</li>
+                    <li class="footerText">LEGO job</li>
+                    <li class="footerText">LEGO Compliance Line</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <ul class="footerList">
+                    <li class="footerHeader">SUPPORT</li>
+                    <li class="footerText">Contact Us</li>
+                    <li class="footerText">Finding Building Instructions</li>
+                    <li class="footerText">Replacement Parts</li>
+                    <li class="footerText">Shipping and Returns</li>
+                    <li class="footerText">Payment Methods</li>
+                    <li class="footerText">Terms &#38; Conditions</li>
+                    <li class="footerText">Product Recalls</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <ul class="footerList">
+                    <li class="footerHeader">ATTRACTIONS</li>
+                    <li class="footerText">LEGO House</li>
+                    <li class="footerText">LEGOLAND Parks</li>
+                    <li class="footerText">LEGOLAND Discovery<br />Centers</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <ul class="footerList">
+                    <li class="footerHeader">MORE FROM US</li>
+                    <li class="footerText">LEGO LIFE</li>
+                    <li class="footerText">LEGO Education</li>
+                    <li class="footerText">LEGO IDeas</li>
+                    <li class="footerText"><a class="buttomLink" asp-page="/Sites/Innovative">LEGO INNOVATIVE</a></li>
+                    <li class="footerText">LEGO foundation</li>
+                    <li class="footerText">Affiliate program</li>
+                </ul>
+            </div>
+            <div class="footerLowerRow">
+                <ul class="footerList">
+                    <li class="lowerFooterText">Politic about protection of personal data</li>
+                    <li class="lowerFooterText">Cookies</li>
+                    <li class="lowerFooterText">Legal Notice</li>
+                    <li class="lowerFooterText">Terms of Use</li>
+                    <li class="lowerFooterText">Accessability</li>
+                    <li class="lowerFooterText">Cookie Settings</li>
+                </ul>
+                <p class="footerDesc">
+                    LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to purchase online. LEGO, 
+                    the LEGO logo, the Minifigure, DUPLO, LEGENDS OF CHIMA, NINJAGO, BIONICLE, MINDSTORMS and MIXELS<br />
+                    are trademarks and copyrights of the LEGO Group. ©2022 The LEGO Group. All rights reserved. 
+                    Use of this site signifies your agreement to the terms of use.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 
